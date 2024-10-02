@@ -1,0 +1,62 @@
+body {
+    background-color: #24353f !important;
+    font-family: "Titillium Web", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Start Sign In Page */
+
+.content {
+    background-color: #24353f;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+input {
+    color: #fff !important;
+}
+
+.form-control:focus {
+    box-shadow: unset !important;
+}
+
+.form-control::placeholder {
+    color: #ced4da !important;
+}
+
+.btnlogin:hover {
+    color: #fff !important;
+}
+
+.psignup {
+    font-size: 1.2rem;
+}
+
+.signup:hover {
+    text-decoration: underline !important;
+}
+
+/* End Sign In Page */
+
+
+
+/* Strat Sign Up Page */
+
+.successcolor{
+    color: green;
+}
+
+/* End Sign Up Page */
+
+
+/* Start Welcome Page */
+
+.navbar{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+/* End Welcome Page */

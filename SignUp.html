@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System (Sign Up)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+   
+    
+    <div class="container py-5">
+        <div class="text-center rounded-2 py-5 content">
+            <h1 class="text-info mb-4">Smart Login System</h1>
+            <input type="text" oninput="validationName()" id="Name" placeholder="Enter Your Name" class="form-control w-75 mx-auto mb-3 bg-transparent">
+            <input type="email" oninput="validationEmail()" id="email" placeholder="Enter Your Email" class="form-control w-75 mx-auto mb-3 bg-transparent">
+            <input type="password" oninput="validationPassword()" id="password" placeholder="Enter Your password" class="form-control w-75 mx-auto mb-4 bg-transparent">
+            <div class="text-center" id="Message"></div>
+            <button class="btn btn-outline-info form-control w-75 mb-4 btnlogin" id="SignUp">Sign Up</button>
+            <p class="text-white psignup">You have an account?
+                <a href="SignIn.html" class="text-decoration-none text-white signup">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/SignUp.js"></script>
+</body>
+
+</html>
