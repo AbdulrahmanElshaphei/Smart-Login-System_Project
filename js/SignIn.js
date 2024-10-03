@@ -17,7 +17,7 @@ function checkUser(){
         if(userEmail.value == usersInfo[i].email && userpassword.value == usersInfo[i].pass){
             var y = usersInfo[i].name;
             localStorage.setItem('userName' , y);
-             document.querySelector("#Message").innerHTML = `<p class = "text-center successcolor fs-5">Success</p>`
+            document.querySelector("#Message").innerHTML = `<p class = "text-center successcolor fs-5">Success</p>`
             location.href = '../Welcome.html';
             break;
         }else{
