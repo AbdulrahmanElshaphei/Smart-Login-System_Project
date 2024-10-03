@@ -18,7 +18,7 @@ function checkUser(){
             var y = usersInfo[i].name;
             localStorage.setItem('userName' , y);
             document.querySelector("#Message").innerHTML = `<p class = "text-center successcolor fs-5">Success</p>`
-            location.href = '../Welcome.html';
+            location.href = '../index1.html';
             break;
         }else{
             document.querySelector("#Message").innerHTML = `<p class = "text-center text-danger fs-5">Email or Password is not valid, Try again</p>`

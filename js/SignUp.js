@@ -8,8 +8,10 @@ if (localStorage.getItem("usersInfo") != null) {
 }
 
 SignUpBtn.addEventListener("click", function () {
-    if (userName.value == '' || userEmail.value == '' || userpassword.value == '' || checkEmailFound() == true || validationName() == false || validationEmail() == false || validationPassword() == false) {
-        document.querySelector("#Message").innerHTML = `<p class = "text-center text-danger fs-5">Name or Email or Password is not valid, Please follow the rules below : <br> Name must contain at least 3 characters <br> Email must be a valid one (Don’t repeat Email) <br> Password must Start With (Capital Character)</p>`
+    if (userName.value == '' || userEmail.value == '' || userpassword.value == '' || validationName() == false || validationEmail() == false || validationPassword() == false) {
+        document.querySelector("#Message").innerHTML = `<p class = "text-center text-danger fs-5">Name or Email or Password is not valid, Please follow the rules below : <br> Name must contain at least 3 characters, Email must be a valid one, Password must Start With (Capital Character)</p>`
+    }else if(checkEmailFound()==true){
+        document.querySelector("#Message").innerHTML = `<p class = "text-center text-danger fs-5">Email is Exist, Enter another Email</p>`
     } else {
         var userInfo = {
             name: userName.value,
